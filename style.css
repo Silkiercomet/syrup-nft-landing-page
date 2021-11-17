@@ -17,6 +17,11 @@ body{
     box-shadow: 0px -32px 119px 40px rgba(0, 0, 0, 0.42);
 
 }
+
+main p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2.5rem; 
+}
 /* header */
 .header__nav{
     display: flex;
@@ -154,4 +159,98 @@ main a.btn{
     font-size: 1.4rem;
     line-height: 30px;
 }
+.card figure img{
+    transform: translateY(5px);
+}
 /* body content not header */
+
+/* left containers end */
+
+/* right container */
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.doll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+.E360{
+    position: relative;
+}
+.E360::after{
+    content: "360";
+    position: absolute;
+    left: 40px;
+    bottom: 10px;
+}
+.eth{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: -5rem;
+}
+.neumor{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 99;
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 2px;
+    padding: 2.5rem 1.8rem;
+}
+#para{
+    padding: 1.3rem 0 2.5rem 0;
+    line-height: 24,84px !important;
+
+}
+.content__card{
+    position: relative;
+    overflow: hidden;
+    margin: 0 2.5rem;
+}
+.content__card::before{
+    content: '';
+    position: absolute;
+    top: -.5rem;
+    width: 128px;
+    height: 128px;
+    background: rgba(168, 220, 137, 0.5);
+    border-radius: 50%;
+    left: -25px;
+    filter: blur(34.3656px);
+}
+.content__card::after{
+    content: '';
+    position: absolute;
+    bottom: 1.5rem;
+    width: 85px;
+    height: 85px;
+    background: rgba(227, 14, 96, 0.5);
+    border-radius: 50%;
+    right: -35px;
+    filter: blur(34.3656px);
+}
+.card__btn{
+    background: linear-gradient(92.23deg, #FF56F6 21.43%, #B936EE 50.63%, #3BACE2 100%, #406AFF 117.04%);
+    box-shadow: 0px 4px 97px rgba(255, 86, 246, 0.51);
+    backdrop-filter: blur(101px);
+    /* Note: backdrop-filter has minimal browser support */
+    
+    border-radius: 2px;
+    padding: 1rem 5.270rem;
+    
+    margin:0 auto;
+}
